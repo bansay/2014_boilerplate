@@ -1,4 +1,4 @@
-## GRUNT SUSY SASS COMPASS Project Starter
+## GRUNT COMPASS Project Starter
 
 ## Requirements:
 

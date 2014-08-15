@@ -2,7 +2,7 @@
 
 ## Requirements:
 
-* [Node.js](http://node.js) Install Node first
+* [Node.js](http://nodejs.org) Install Node first
 * [Grunt](http://gruntjs.com) npm install -g grunt-cli
 * [Sass](http://sass-lang.com) gem install sass
 * [Compass](http://compass-style.org) gem install compass

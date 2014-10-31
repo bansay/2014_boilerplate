@@ -24,12 +24,15 @@ $blue : #3366ff;
   margin: 0 auto;
 }
 
+
+
 html {
   background: $off_white;  
 }
 
 body {
-  background: $blue;
+  background: $red;
+  color: #999;
 }
 
 /////     MIXINS    /////

@@ -3,38 +3,17 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-// would import fonts here
+/////     COLORS    /////
 
-//load fonts using compass
-// @include font-face("Font Name", font-files("folder-inside-font/font-name.ttf", truetype, "ostrich/font-name.woff", woff, "ostrich/font-name.svg", svg), "ostrich/font-name.eot", 700, normal);
-
-
-// define main styles
-
-$aqua : #22BCB9;
-$gold : #BA8748;
-$gray : #333333;
+/////     CONTAINERS    /////
 
 /////     MIXINS    /////
 
-// Fonts ---------------------------------------------------------------------
-
-@mixin sans-family {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-@mixin serif-family {
-  font-family: georgia, serif; }
-
-@mixin monospace-family {
-  font-family: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, Courier, monospace, sans-serif; }
-
-
 @mixin hide-text {    
-    text-indent:-9999px;
-    display:block;
-}
-@mixin show-text {	
-	text-indent: 0;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    display: block;
 }
 
 @mixin button-gradient($from, $to) {
@@ -56,15 +35,4 @@ $gray : #333333;
 	background: -ms-linear-gradient(top, $to 0%,$from 100%); 
 	background: linear-gradient(to bottom, $to 0%,$from 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$to', endColorstr='$from',GradientType=0 );	
-}
-@mixin button-border($cta-btm){
-    box-shadow:
-	0px 1px 1px $cta-btm,
-	0px 0px 1px transparent,
-	0px 2px 1px $cta-btm,
-	0px 1px 1px transparent,
-	0px 3px 1px $cta-btm,
-	0px 2px 1px transparent,
-	0px 4px 1px $cta-btm,
-	0px 3px 1px transparent
 }

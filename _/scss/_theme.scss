@@ -5,7 +5,32 @@
 
 /////     COLORS    /////
 
+$red : #f80000;
+$off_white : #f8f8f8;
+$blue : #3366ff;
+
 /////     CONTAINERS    /////
+
+.wide-container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 960px;
+  width: 96%;
+  max-width: 1200px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+html {
+  background: $off_white;  
+}
+
+body {
+  background: $red;
+}
 
 /////     MIXINS    /////
 

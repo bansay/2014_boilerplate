@@ -555,6 +555,31 @@ table {
   box-sizing: border-box;
 }
 
+/* line 14, ../scss/_theme.scss */
+.wide-container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* line 19, ../scss/_theme.scss */
+.container {
+  width: 960px;
+  width: 96%;
+  max-width: 1200px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+/* line 27, ../scss/_theme.scss */
+html {
+  background: #f8f8f8;
+}
+
+/* line 31, ../scss/_theme.scss */
+body {
+  background: #f80000;
+}
+
 /* line 1, ../scss/_module.scss */
 .container {
   width: 96%;

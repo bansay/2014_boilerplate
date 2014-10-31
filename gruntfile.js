@@ -25,10 +25,11 @@ grunt.initConfig({
      },
     watch: {
         styles: {
-            files: ['_/scss/*.scss'],
+            files: ['_/scss/*.scss', 'gruntfile.js'],
             tasks: ['compass'],
             options: {
                 spawn: false,
+                livereload: true,
             },
         },
     }
@@ -39,7 +40,6 @@ grunt.loadNpmTasks('grunt-contrib-compass');
 grunt.loadNpmTasks('grunt-contrib-watch');
  
 // Default task(s).
-grunt.registerTask('default', ['compass']);
-grunt.registerTask('dev', ['watch']);
+grunt.registerTask('default', ['compass', 'watch']);
  
 };

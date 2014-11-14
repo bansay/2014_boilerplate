@@ -21,18 +21,7 @@ grunt.initConfig({
         relativeAssets:true,
         raw: "preferred_syntax = :sass\n"
       }
-    }, 
-    prod: {
-      options: {
-        httpPath:"/",
-        sassDir:"_/scss",
-        cssDir:"_/css",
-        outputStyle:"compressed",
-        noLineComments:true,
-        relativeAssets:true,
-        raw: "preferred_syntax = :sass\n"
-      }
-    }    
+    }   
   },
   imagemin: {
       png: {
@@ -42,9 +31,9 @@ grunt.initConfig({
           files: [
               {
                   expand: true,
-                  cwd: '_/img/src/',
+                  cwd: '_/img/build/',
                   src: ['**/*.png'],
-                  dest: '_/img/dist/',
+                  dest: '_/img/prod/',
                   ext: '.png'
               }
           ]
@@ -56,17 +45,27 @@ grunt.initConfig({
           files: [
               {
                   expand: true,
-                  cwd: '_/img/src/',
+                  cwd: '_/img/build/',
                   src: ['**/*.jpg'],
-                  dest: '_/img/dist/',
+                  dest: '_/img/prod/',
                   ext: '.jpg'
               }
           ]
       }
   },  
   watch: {
+    gruntfile: {
+      files: ['gruntfile.js']
+    }, 
+    templates: {
+      files: ['*.html', '*.php'],
+      options: {
+        spawn: false,
+        livereload: true
+      }
+    },
     styles: {
-      files: ['_/scss/*.scss', 'gruntfile.js'],
+      files: ['_/scss/*.scss'],
       tasks: ['compass'],
       options: {
         spawn: false,
@@ -88,6 +87,5 @@ grunt.loadNpmTasks('grunt-contrib-watch');
  
 // Default task(s).
 grunt.registerTask('default', ['compass:dev', 'imagemin', 'watch']);
-grunt.registerTask('prod', ['compass:prod']);
  
 };

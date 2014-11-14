@@ -33,7 +33,7 @@
     
     
         <header>
-            <h1>Hello World! Welcome to the Grunt Club. We Dig.</h1>
+            <h1>Hello World!</h1>
             <nav>
                 <ul>
                     <li><a href="#">Test 1</a></li>

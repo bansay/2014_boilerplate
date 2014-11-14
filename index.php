@@ -45,22 +45,22 @@
         
         <section>
             <h3>Grunt imagemin .jpg comparison</h3>
-            <label>before (/src):</label>
-            <img src="_/img/src/rotator-home-beforeplay2.jpg" />
-            <label>after (/dist):</label>
-            <img src="_/img/dist/rotator-home-beforeplay2.jpg" />
+            <label>before (/build):</label>
+            <img src="_/img/build/rotator-home-beforeplay2.jpg" />
+            <label>after (/prod):</label>
+            <img src="_/img/prod/rotator-home-beforeplay2.jpg" />
         </section>
         
         <section style="background: yellow;">
             <h3>Grunt imagemin .jpg comparison</h3>
-            <label>before (/src):</label>
-            <img src="_/img/src/nav-twitter-mauve.png" />
-            <img src="_/img/src/nav-facebook-mauve.png" />
-            <img src="_/img/src/nav-dribbble-mauve.png" />
-            <label>after (/dist):</label>
-            <img src="_/img/dist/nav-twitter-mauve.png" />
-            <img src="_/img/dist/nav-facebook-mauve.png" />
-            <img src="_/img/dist/nav-dribbble-mauve.png" />
+            <label>before (/build):</label>
+            <img src="_/img/build/nav-twitter-mauve.png" />
+            <img src="_/img/build/nav-facebook-mauve.png" />
+            <img src="_/img/build/nav-dribbble-mauve.png" />
+            <label>after (/prod):</label>
+            <img src="_/img/prod/nav-twitter-mauve.png" />
+            <img src="_/img/prod/nav-facebook-mauve.png" />
+            <img src="_/img/prod/nav-dribbble-mauve.png" />
         </section>        
 
         <footer>

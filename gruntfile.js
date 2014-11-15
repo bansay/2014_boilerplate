@@ -24,34 +24,34 @@ grunt.initConfig({
     }   
   },
   imagemin: {
-      png: {
-          options: {
-              optimizationLevel: 7
-          },
-          files: [
-              {
-                  expand: true,
-                  cwd: '_/img/build/',
-                  src: ['**/*.png'],
-                  dest: '_/img/prod/',
-                  ext: '.png'
-              }
-          ]
+    png: {
+      options: {
+        optimizationLevel: 7
       },
-      jpg: {
-          options: {
-              progressive: true
-          },
-          files: [
-              {
-                  expand: true,
-                  cwd: '_/img/build/',
-                  src: ['**/*.jpg'],
-                  dest: '_/img/prod/',
-                  ext: '.jpg'
-              }
-          ]
-      }
+      files: [
+        {
+          expand: true,
+          cwd: '_/img/build/',
+          src: ['**/*.png'],
+          dest: '_/img/prod/',
+          ext: '.png'
+        }
+      ]
+    },
+    jpg: {
+      options: {
+        progressive: true
+    },
+    files: [
+        {
+          expand: true,
+          cwd: '_/img/build/',
+          src: ['**/*.jpg'],
+          dest: '_/img/prod/',
+          ext: '.jpg'
+        }
+      ]
+    }
   },  
   watch: {
     gruntfile: {
@@ -70,12 +70,12 @@ grunt.initConfig({
       options: {
         spawn: false,
         livereload: true,
-      },
-      images: {
-        files: ['_/img/src/*.{png,jpg,gif}'],
-        tasks: ['imagemin']
       }
     },
+    images: {
+      files: ['_/img/src/*.{png,jpg,gif}'],
+      tasks: ['imagemin']
+    }    
   }
 });
  
@@ -86,6 +86,7 @@ grunt.loadNpmTasks('grunt-contrib-watch');
 
  
 // Default task(s).
-grunt.registerTask('default', ['compass:dev', 'imagemin', 'watch']);
+grunt.registerTask('default', ['compass', 'imagemin']);
+grunt.registerTask('dev', ['watch']);
  
 };
